@@ -1,4 +1,4 @@
-# Shopping Mall
+# Gakko Mall
 
 ## Skills
 
@@ -35,6 +35,8 @@
 <hr/>
 
 ## Feature
+
+- `GitMind`를 이용해 구성
 
 <img src="img/frame.jpg">
 
