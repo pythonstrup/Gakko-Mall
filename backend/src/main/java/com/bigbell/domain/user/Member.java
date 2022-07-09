@@ -15,7 +15,6 @@ import lombok.Setter;
 @Setter
 @Builder
 @NoArgsConstructor
-@AllArgsConstructor
 @Entity
 public class Member {
 
@@ -30,6 +29,13 @@ public class Member {
 	private String nickname;
 	
 	private Authority authority;
+	
+	@Builder
+    public Member(String email, String password, Authority authority) {
+        this.email = email;
+        this.password = password;
+        this.authority = authority;
+    }
 }
 
 
