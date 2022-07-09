@@ -27,8 +27,34 @@
 
 ### Frontend
 
-- javascript
-- react
+- Javascript
+- TypeScript
+- React
+
+<br/>
+
+#### Construct Project
+
+```
+npx create-react-app frontend --template=typescript
+cd frontend
+npm start
+```
+
+<br/>
+
+#### Installation
+
+- react-router-dom
+- react-bootstrap
+- styled-components
+
+```
+npm install react-router-dom @types/react-router-dom
+yarn add redux react-redux
+npm i react-bootstrap bootstrap
+npm i @types/bootstrap
+```
 
 <br/>
 
