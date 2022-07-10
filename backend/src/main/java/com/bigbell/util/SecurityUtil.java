@@ -10,7 +10,7 @@ public class SecurityUtil {
 	
 	private SecurityUtil() {}
 	
-	public static Long getCurrentCustomerId() {
+	public static Long getCurrentMemberId() {
 		final Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 		
 		if (authentication == null || authentication.getName() == null) {

@@ -1,11 +1,11 @@
 import { GET, POST }  from "./fetch-auth-action";
 
 const createTokenHeader = (token:string) => {
-    return {
-        headers: {
-            'Authorization': 'Bearer ' + token
-        }
+  return {
+    headers: {
+      'Authorization': 'Bearer ' + token
     }
+  }
 }
 
 const calculateRemainingTime = (expirationTime:number) => {

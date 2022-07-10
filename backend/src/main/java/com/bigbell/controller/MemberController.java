@@ -16,15 +16,17 @@ import lombok.RequiredArgsConstructor;
 @RestController
 public class MemberController {
 	
-	private final MemberService customerService;
+	private final MemberService memberService;
 	
 	@GetMapping("/me")
-	public ResponseEntity<MemberResponseDto> getMyCustomerInfo() {
-		return ResponseEntity.ok(customerService.getMyInfo());
+	public ResponseEntity<MemberResponseDto> getMyMemberInfo() {
+		MemberResponseDto myInfoBySecurity = memberService.getMyInfo();
+        System.out.println(myInfoBySecurity.getNickname());
+		return ResponseEntity.ok(memberService.getMyInfo());
 	}
 	
 	@GetMapping("/{email}")
-	public ResponseEntity<MemberResponseDto> getCustomerInfo(@PathVariable String email) {
-		return ResponseEntity.ok(customerService.getCustomerInfo(email));
+	public ResponseEntity<MemberResponseDto> getMemberInfo(@PathVariable String email) {
+		return ResponseEntity.ok(memberService.getMyInfoBySecurity(email));
 	}
 }

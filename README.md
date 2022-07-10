@@ -51,9 +51,10 @@ npm start
 
 ```
 npm install react-router-dom @types/react-router-dom
-yarn add redux react-redux
 npm i react-bootstrap bootstrap
 npm i @types/bootstrap
+npm i styled-component
+npm i -D @types/styled-components
 ```
 
 <br/>
